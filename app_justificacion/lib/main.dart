@@ -34,13 +34,21 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
+        
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.asset(
+                'assets/login.jpg', // Ruta de la imagen
+                width: 300.0,
+                height: 250.0,
+              ),
               TextField(
+                
                 controller: _emailController,
                 decoration: InputDecoration(
                   labelText: 'Correo electrónico',
