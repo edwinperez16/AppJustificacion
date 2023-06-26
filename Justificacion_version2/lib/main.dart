@@ -52,7 +52,9 @@ class MyApp extends StatelessWidget {
       ],
       //hasta aqui
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.from(colorScheme: lightColorScheme),
+      theme: ThemeData(
+          colorSchemeSeed: Colors.red.shade400
+        ),
       title: 'Justificaciones App',
       routes: {
         'home'                            : (context) => const JustificacionesPage(),
